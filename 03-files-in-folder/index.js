@@ -12,7 +12,7 @@ function readFiles(dirname, files) {
         console.log(error);
       } else {
         if (stats.isFile())
-          showFile({ name, ext, size: (stats.size * 0.001).toFixed(2) });
+          showFile({ name, ext, size: (stats.size * 0.001).toFixed(3) });
       }
     });
   });
